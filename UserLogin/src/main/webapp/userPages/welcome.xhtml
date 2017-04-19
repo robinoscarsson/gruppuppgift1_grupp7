@@ -4,7 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
-        <title>Facelet Title</title>
+        <title>MyPages</title>
     </h:head>
     <h:body>
         <ui:composition template="/templates/defaultTemplate.xhtml">
@@ -12,7 +12,8 @@
                 <h3>Välkommen hem</h3>
             </ui:define>
             <ui:define name="content">
-                Du är inloggad som ${authenticationPageBean.selectedUser.userName}              
+                Du är inloggad som: ${authenticationPageBean.selectedUser.userName}<br/>
+                Ditt lösenord är : ${authenticationPageBean.selectedUser.password}
             </ui:define>   
         </ui:composition>
     </h:body>

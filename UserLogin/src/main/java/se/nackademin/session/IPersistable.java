@@ -7,7 +7,7 @@ package se.nackademin.session;
 
 /**
  *
- * @author carl
+ * Created by Grupp 7
  */
 public interface IPersistable {  
     public String getId();

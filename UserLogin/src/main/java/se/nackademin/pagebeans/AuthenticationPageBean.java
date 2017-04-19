@@ -14,7 +14,7 @@ import se.nackademin.backend.FakeDB;
 
 /**
  *
- * @author carl
+ * Created by Grupp 7
  */
 @Named
 @RequestScoped

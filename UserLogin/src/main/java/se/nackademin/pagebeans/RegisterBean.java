@@ -15,7 +15,7 @@ import se.nackademin.services.UserHandler;
 
 /**
  *
- * @author carl
+ * Created by Grupp 7
  */
 @Named
 @RequestScoped

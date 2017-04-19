@@ -10,7 +10,7 @@ import se.nackademin.session.IPersistable;
 
 /**
  *
- * @author carl
+ * Created by Grupp 7
  */
 public class User implements IPersistable {
 

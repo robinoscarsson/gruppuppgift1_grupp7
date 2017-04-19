@@ -14,7 +14,7 @@ import se.nackademin.domain.User;
 
 /**
  *
- * @author carl
+ * Created by Grupp 7
  */
 @Named
 @SessionScoped

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Robin.
+ * Created by Grupp 7
  */
 public class FakeDB {
 

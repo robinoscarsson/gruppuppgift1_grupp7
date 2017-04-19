@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import se.nackademin.domain.User;
 import se.nackademin.session.SessionBean;
+import se.nackademin.backend.FakeDB;
 
 /**
  *
@@ -29,8 +30,21 @@ public class AuthenticationPageBean {
             throw new RuntimeException("Du är redan inloggad "
                     + getSelectedUser().getUserName());
         }
-        getSessionHandler().persist(getSelectedUser());
-        return "/userPages/welcome.xhtml";
+        User dbUser = FakeDB.getUser(getSelectedUser().getUserName());
+        if(dbUser != null && dbUser.getUserName().equals(getSelectedUser().getUserName())
+                && dbUser.getPassword().equals(getSelectedUser().getPassword())){
+            getSessionHandler().persist(getSelectedUser());
+            System.out.println("Inloggning fungerar.");
+            return "/userPages/welcome.xhtml";
+        } else {
+            return "/outcomes/loginFailed.xhtml";
+        }
+        
+    }
+    public String doLogout() {
+        setSelectedUser(null);
+        System.out.println("Loggat ut!");
+        return "/index.xhtml";
     }
 
     // Getters and setters

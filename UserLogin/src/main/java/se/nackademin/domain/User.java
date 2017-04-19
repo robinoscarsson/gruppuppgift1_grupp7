@@ -17,6 +17,24 @@ public class User implements IPersistable {
     private String id;
     private String userName;
     private String password;
+    private String email;
+    private boolean active;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
 
     @Override
     public String getId() {
@@ -30,9 +48,6 @@ public class User implements IPersistable {
 
     // Getters and setters
     public String getUserName() {
-        if (userName == null) {
-            userName = "robin";
-        }
         return userName;
     }
 
@@ -41,10 +56,6 @@ public class User implements IPersistable {
     }
 
     public String getPassword() {
-
-        if (password == null) {
-            password = "hemligt";
-        }
         return password;
     }
 

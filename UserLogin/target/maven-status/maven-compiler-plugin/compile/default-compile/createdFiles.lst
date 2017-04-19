@@ -1,5 +1,5 @@
-se\nackademin\domain\User.class
-se\nackademin\pagebeans\AuthenticationPageBean.class
-se\nackademin\session\SessionBean.class
-se\nackademin\backend\FakeDB.class
-se\nackademin\session\IPersistable.class
+se/nackademin/pagebeans/AuthenticationPageBean.class
+se/nackademin/domain/User.class
+se/nackademin/backend/FakeDB.class
+se/nackademin/session/IPersistable.class
+se/nackademin/session/SessionBean.class
